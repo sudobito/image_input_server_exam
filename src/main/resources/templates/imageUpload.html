@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Upload</title>
+</head>
+<body>
+<h2>Upload Image to Server</h2>
+<form method="POST" action="/images" enctype="multipart/form-data">
+    <label for="image">Choose image to upload:</label>
+    <input type="file" id="image" name="image" required>
+    <button type="submit">업로드</button>
+</form>
+</body>
+</html>
